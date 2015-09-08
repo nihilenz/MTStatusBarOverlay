@@ -279,8 +279,8 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
 #pragma mark Lifecycle
 ////////////////////////////////////////////////////////////////////////
 
-- (id)initWithFrame:(CGRect)frame {
-    if ((self = [super initWithFrame:frame])) {
+- (id)init {
+    if ((self = [super init])) {
         CGRect statusBarFrame = [UIApplication sharedApplication].statusBarFrame;
         
 		// only use height of 20px even is status bar is doubled
